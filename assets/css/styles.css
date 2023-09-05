@@ -887,4 +887,8 @@ header {
   .footer-section article:first-of-type {
     grid-column: 1/4;
   }
+
+  .hover-one {
+    visibility: visible;
+  }
 }
