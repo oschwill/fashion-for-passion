@@ -623,10 +623,6 @@ header {
     overflow: hidden;
   }
 
-  .background {
-    background: none;
-  }
-
   .head-center {
     position: absolute;
     right: 0;
