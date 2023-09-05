@@ -392,13 +392,11 @@ header {
 }
 
 .category-section img:first-of-type {
-  width: 100%; /* 330px */
-  /* height: 453px; */
+  width: 25%; /* 330px */
   align-self: flex-end;
 }
 
 .category-section img:last-of-type {
-  width: 100%; /* 220px */
   height: 285px;
   align-self: flex-start;
 }
@@ -413,13 +411,21 @@ header {
   padding-bottom: 58px;
 }
 
+.category-section article div h2 {
+  font-size: 10rem;
+}
+
+.hover-one {
+  visibility: hidden;
+}
+
 /* ! HOVER EFFEKT */
 .category-section article div:hover > * {
   color: var(--font-hover-primary);
 }
 
-.category-section article div h2 {
-  font-size: 9.98rem;
+.category-section article:hover + img {
+  visibility: visible;
 }
 
 .category-section article div p {
@@ -610,4 +616,270 @@ header {
 
 .footer-form button {
   width: 100px;
+}
+/***# MEDIUM MONITORS ***/
+@media (max-width: 1200px) {
+  main {
+    overflow: hidden;
+  }
+
+  .background {
+    background: none;
+  }
+
+  .head-center {
+    position: absolute;
+    right: 0;
+  }
+
+  .head-section {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
+
+  .head-center h1 {
+    font-size: 12rem;
+  }
+
+  .category-section {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .category-section img:last-of-type {
+    width: 49%;
+    height: auto;
+    order: -1;
+  }
+
+  .category-section article {
+    width: 47%;
+  }
+
+  .category-section article div h2 {
+    font-size: 7rem;
+  }
+
+  .category-section article div {
+    padding-bottom: 29px;
+  }
+
+  .category-section img:first-of-type {
+    width: 70%;
+    align-self: flex-end;
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .slogan-section article h2 {
+    font-size: 7rem;
+    line-height: 100px;
+  }
+
+  .divine-beauty-section .video .video-text {
+    margin: 0 10vw;
+  }
+
+  .footer-section {
+    padding: 40px 10px;
+  }
+}
+
+/***# IPAD SMALL/MEDIUM ***/
+@media (max-width: 768px) {
+  .image-gallery {
+    gap: 50px;
+  }
+
+  .first-image-f,
+  .first-image-s,
+  .second-image-f,
+  .second-image-s {
+    height: auto;
+  }
+
+  .first-gallery,
+  .second-gallery {
+    gap: 40px;
+  }
+
+  .category-section {
+    margin: 0;
+  }
+
+  .category-section article {
+    width: 100%;
+  }
+
+  .category-section img:last-of-type {
+    width: 100%;
+  }
+
+  .blogs-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .divine-beauty-section .video .video-text {
+    display: block;
+  }
+
+  .credits .award {
+    gap: 150px;
+  }
+
+  .credits .award > p {
+    width: auto;
+  }
+
+  .slogan-section {
+    margin: 0 10vw 0 20vw;
+    padding-bottom: 75px;
+  }
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 30px;
+  }
+
+  .line-flex {
+    grid-column: 1/4;
+    order: 1;
+  }
+
+  .footer-section article:last-of-type {
+    grid-column: 1/4;
+    width: 70%;
+  }
+}
+
+/***# MOBILE SMALL ***/
+@media (max-width: 600px) {
+  .head-section {
+    display: block;
+    margin: 0;
+  }
+
+  .head-left-picture img,
+  .head-right-picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .head-center {
+    position: static;
+    width: auto;
+  }
+
+  .head-center h1 {
+    font-size: 6rem;
+    word-spacing: 1000px;
+    line-height: 100px;
+  }
+
+  .head-center .head-center--creative {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .fashion-section {
+    margin: 0;
+  }
+
+  .selected-work-section > h2,
+  .blogs-section > h2 {
+    font-size: 6rem;
+    line-height: 50px;
+    margin: 0 5vw;
+  }
+
+  .selected-work-section .selected-text,
+  .blogs-section .selected-text {
+    gap: 0;
+  }
+
+  .image-gallery {
+    gap: 10px;
+    margin-bottom: 70px;
+  }
+
+  .first-gallery,
+  .second-gallery {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .first-image-s,
+  .second-image-s {
+    margin-bottom: 0;
+  }
+
+  .category-section {
+    padding-bottom: 92.5px;
+  }
+
+  .selected-work-section .selected-text,
+  .blogs-section .selected-text,
+  .blogs-gallery {
+    display: block;
+  }
+
+  .blogs-image {
+    margin-bottom: 10px;
+  }
+
+  .blogs-section {
+    margin-bottom: 10px;
+  }
+
+  .divine-beauty-section {
+    gap: 0;
+  }
+
+  .divine-beauty-section .video {
+    background-size: contain;
+  }
+
+  .divine-beauty-section .video .video-text {
+    margin: 0 10vw 20vh 0;
+  }
+
+  .divine-beauty-section .video .video-text h2 {
+    font-size: 3rem;
+  }
+
+  .divine-beauty-section .video .video-text p {
+    font-size: 1rem;
+  }
+
+  .credits {
+    margin: 0;
+  }
+
+  .credits h2 {
+    font-size: 6rem;
+  }
+
+  .credits .award {
+    display: block;
+    padding-bottom: 65px;
+  }
+
+  .award div {
+    text-align: center;
+  }
+
+  .slogan-section {
+    margin: 0;
+  }
+
+  .footer-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-section article:first-of-type {
+    grid-column: 1/4;
+  }
 }
