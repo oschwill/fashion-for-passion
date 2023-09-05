@@ -39,6 +39,7 @@
 html {
   font-size: 62.5%;
   font-family: NewYork, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -65,6 +66,11 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 30px;
+  width: 190px;
+}
+
+.horizontal-rule {
+  border-bottom: 1px solid var(--border-color-primary);
 }
 
 /*** HEADER CSS ***/
@@ -79,7 +85,6 @@ header {
   align-items: center;
   width: 100%;
   height: 84px;
-  border-bottom: 1px solid var(--border-color-primary);
   position: fixed;
   z-index: 1000;
   background-color: var(--bg-body-color);
@@ -141,7 +146,6 @@ header {
   row-gap: 25px;
   column-gap: 5vw;
   margin: 0 10vw;
-  border-bottom: 1px solid var(--border-color-primary);
   background: url('../imgs/head-section-background.png') no-repeat;
 }
 
@@ -231,7 +235,6 @@ header {
 .fashion-section {
   margin: 0 25vw;
   text-align: center;
-  border-bottom: 1px solid var(--border-color-primary);
 }
 
 .fashion-section h2 {
@@ -258,7 +261,7 @@ header {
 .blogs-section > h2 {
   font-size: 10rem;
   line-height: 109.8px;
-  word-spacing: 1000px;
+  padding-top: 40px;
 }
 
 .selected-work-section .selected-text,
@@ -373,7 +376,6 @@ header {
   justify-content: space-between;
   font-size: 1.3rem;
   font-weight: 400;
-  border-bottom: 1px solid var(--border-color-primary);
   padding-bottom: 20px;
 }
 
@@ -386,7 +388,6 @@ header {
   margin: 0 10vw;
   display: flex;
   gap: 100px;
-  border-bottom: 1px solid var(--border-color-primary);
   padding-bottom: 185px;
 }
 
@@ -487,10 +488,126 @@ header {
 }
 
 .divine-beauty-section .video .video-text h2::first-letter,
-.divine-beauty-section .video .video-text p::first-letter {
+.divine-beauty-section .video .video-text p::first-letter,
+.credits .award > p::first-letter {
   margin-left: 35px;
 }
 
 .divine-beauty-section .video .video-text p {
   font-size: 2.2rem;
+}
+
+.credits {
+  margin: 0 10vw;
+}
+
+.credits h2 {
+  margin-bottom: 6px;
+  font-size: 10.5rem;
+}
+
+.credits > p {
+  font-size: 1.78rem;
+  line-height: 27.68px;
+}
+
+.credits .award {
+  display: flex;
+  gap: 323px;
+  justify-content: flex-end;
+  padding-bottom: 130px;
+}
+
+.credits .award > p {
+  width: 30%;
+  font-size: 1.68rem;
+  color: var(--font-white-grey);
+  font-weight: 400;
+  line-height: 23.21px;
+}
+
+.award div img {
+  margin-bottom: 25px;
+}
+
+.award div p {
+  font-size: 1.89rem;
+}
+
+.award div p:last-of-type {
+  color: var(--font-white-grey);
+}
+
+/* ! SLOGAN SECTION */
+.slogan-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 39.5px;
+  margin: 0 25vw 0 35vw;
+  padding-bottom: 149.9px;
+}
+
+.slogan-section article h2 {
+  font-size: 10.59rem;
+  line-height: 137.8px;
+  margin-bottom: 39.54px;
+}
+
+/*** FOOTER CSS ***/
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 50px;
+  border-top: 1px solid var(--border-color-primary);
+  font-size: 1.78rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.footer-section article p {
+  padding-bottom: 7.33px;
+}
+
+.footer-section article a {
+  text-decoration: none;
+  color: var(--font-white-color);
+}
+
+.footer-section article div span {
+  padding-right: 19px;
+}
+
+.footer-section .line-flex > * {
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.footer-section article .line {
+  width: 100px;
+}
+
+.footer-section .line-flex p span {
+  color: var(--font-white-grey);
+}
+
+.footer-section article:last-of-type {
+  width: 20%;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form input {
+  margin-bottom: 30px;
+  appearance: none;
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--font-white-grey);
+  background: none;
+}
+
+.footer-form button {
+  width: 100px;
 }

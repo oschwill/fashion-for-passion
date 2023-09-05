@@ -10,25 +10,25 @@
 
 <body>
   <header>
-    <div class="navigation">
+    <div class="navigation horizontal-rule">
       <div class="logo">
         <img src="./assets/imgs/logo.png" alt="Logo">
       </div>
       <div class="navbar">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">WORK</a>
-        <a href="#">SERVICE</a>
-        <a href="#">BLOG</a>
-        <a href="#">AWARD</a>
-        <a href="#">CONTACT</a>
+        <a href="#check-my-works">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#service">SERVICE</a>
+        <a href="#blog">BLOG</a>
+        <a href="#award">AWARD</a>
+        <a href="#contact">CONTACT</a>
       </div>
     </div>
   </header>
   <main>
     <!-- FIRST SECTION HEADER -->
-    <div class="background">
-      <div class="head-section">
+    <div class="background" id="check-my-works">
+      <div class="head-section horizontal-rule">
         <div class="head-left-picture">
           <img src="./assets/imgs/head-1.jpeg" alt="">
         </div>
@@ -65,23 +65,23 @@
         </div>
       </div>
     </div>
-    <!-- SECOND SECTION -->
-    <section class="fashion-section">
+    <!-- FASHION SECTION -->
+    <section class="fashion-section horizontal-rule" id="about">
       <h2>Fashion for passion & life style</h2>
       <p>We formulate intentionally crafted supplements for thoughtful people like
         you – using only the highest quality ingredients at effective doses.
         Empowering you to take control of your wellness, look and feel great, and
         live a life brimming with energy.</p>
-      <button>Check My Works</button>
+      <a href="#check-my-works"><button>Check My Works</button></a>
     </section>
     <!-- SELECTED WORK SECTION -->
-    <section class="selected-work-section">
+    <section class="selected-work-section" id="work">
       <h2>Selected works</h2>
       <div class="selected-text">
         <p>&nbsp;</p>
         <p>Creative work of natural source from, We select only those
           modern works also my planet your products.</p>
-        <button>View all Works</button>
+        <a href="#check-my-works"><button>View all Works</button></a>
       </div>
       <div class="image-gallery">
         <div class="first-gallery">
@@ -109,14 +109,14 @@
           </div>
         </div>
       </div>
-      <div class="last-portion">
+      <div class="last-portion horizontal-rule">
         <p>Service</p>
         <p>My Expertise in This Area</p>
         <p>Lets Talk</p>
       </div>
     </section>
     <!-- CATEGORY SECTION -->
-    <section class="category-section">
+    <section class="category-section horizontal-rule" id="service">
       <img src="./assets/imgs/head-3.jpeg" alt="head3">
       <article>
         <div>
@@ -139,7 +139,7 @@
       <img src="./assets/imgs/category.jpeg" alt="category">
     </section>
     <!-- BLOGS SECTION -->
-    <section class="blogs-section">
+    <section class="blogs-section" id="blog">
       <h2>My Blogs</h2>
       <div class="selected-text">
         <p>&nbsp;</p>
@@ -147,7 +147,7 @@
           content of a page when looking at its layout. The point of using Lorem Ipsum
           is that it has a more-or-less normal distribution of letters, as opposed to using
           'Content here.</p>
-        <button>View all Blogs</button>
+        <a href="#check-my-works"><button>View all Blogs</button></a>
       </div>
       <article class="blogs-gallery">
         <div class="blogs-image">
@@ -170,8 +170,8 @@
         </div>
       </article>
     </section>
-    <!-- ! DIVINE BEAUTY SECTION -->
-    <section class="divine-beauty-section">
+    <!-- DIVINE BEAUTY SECTION -->
+    <section class="divine-beauty-section" id="award">
       <div class="video">
         <div class="video-text">
           <h2>DIVINE BEAUTY</h2>
@@ -181,7 +181,7 @@
             its accessories.</p>
         </div>
       </div>
-      <div class="credits">
+      <div class="credits horizontal-rule">
         <h2>Nominated as fashion
           designer of the year
           worldwide.</h2>
@@ -197,9 +197,58 @@
             <p>Winner</p>
           </div>
         </div>
+        <p>Contact</p>
       </div>
     </section>
+    <!-- SLOGAN SECTION -->
+    <section class="slogan-section" id="contact">
+      <article>
+        <h2>Let’s work on
+          something great
+          together</h2>
+        <a href="#check-my-works"><button>Lets Talk</button></a>
+      </article>
+    </section>
   </main>
+  <footer>
+    <section class="footer-section">
+      <article>
+        <img src="./assets/imgs/logo.png" alt="Logo">
+      </article>
+      <article>
+        <p><a href="#check-my-works">Main Page</a></p>
+        <p><a href="#">Licensing</a></p>
+        <p><a href="#">Style Guide</a></p>
+        <p><a href="#">404 Page</a></p>
+      </article>
+      <article>
+        <p><a href="#">Works</a></p>
+        <p><a href="#">Changelog</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Services</a></p>
+      </article>
+      <article class="line-flex">
+        <div>
+          <span>Fb</span>
+          <span>Tw</span>
+          <span>In</span>
+          <span>Db</span>
+          <span>Be</span>
+        </div>
+        <div class="line">
+          <hr>
+        </div>
+        <p><span>Powered by</span> Webflow</p>
+      </article>
+      <article>
+        <form action="" class="footer-form">
+          <label for="email"></label>
+          <input type="email" name="email" placeholder="Your Email">
+          <a href="#check-my-works"><button>Submit</button></a>
+        </form>
+      </article>
+    </section>
+  </footer>
 </body>
 
 </html>
