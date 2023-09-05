@@ -821,6 +821,10 @@ header {
     padding-bottom: 92.5px;
   }
 
+  .selected-work-section {
+    margin: 0;
+  }
+
   .selected-work-section .selected-text,
   .blogs-section .selected-text,
   .blogs-gallery {
